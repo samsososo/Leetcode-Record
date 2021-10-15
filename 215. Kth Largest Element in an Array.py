@@ -1,0 +1,22 @@
+#Method 1
+class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        sortedNums = sorted(nums)
+        indexNeededToFind = len(nums) - k
+        return sortedNums[indexNeededToFind]
+
+#Method 2
+class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        pivot = random.choice(nums)
+        left = [x for x in nums if x > pivot]
+        mid = [x for x in nums if x == pivot]
+        right = [x for x in nums if x < pivot]
+
+        L, M = len(left), len(mid)
+        if k <= L:
+            return self.findKthLargest(left, k)
+        elif k > (L + M):
+            return self.findKthLargest(right, k - (L + M))
+        else:
+            return mid[0]

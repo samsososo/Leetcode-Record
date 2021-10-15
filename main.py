@@ -1,7 +1,4 @@
-nums = [3,2,3,1,2,4,5,5,6]
-k = 4
-# [1, 2, 2, 3, 3, 4, 5, 5, 6]
-# ans = 3
+nums = [9, 0, 6, 3, 45]
 
-print(sorted(nums))
-
+left = [x for x in nums if x > 1]
+print(left)
