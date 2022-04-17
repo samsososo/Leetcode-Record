@@ -13,7 +13,6 @@
 </br>
 </br>
 
-
 | #    | Title                                                                                                                           | Difficulty                                                           | Runtime | Memory | Language                                                                      |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ------- | ------ | ----------------------------------------------------------------------------- |
 | 35   | [Search Insert Position](https://leetcode.com/problems/first-bad-version/)                                                      | ![Easy](https://img.shields.io/badge/Easy-5cb85c.svg?style=flat)     | 49 ms   | 14.7 MB| ![Python](https://img.shields.io/badge/Python--178600.svg?style=flat)         |
