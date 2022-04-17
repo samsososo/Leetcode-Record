@@ -29,7 +29,7 @@ class Solution:
         l, r = 0, len(nums) - 1
         res = []
         while l <= r:
-            if nums[l] ** 2 < nums[r] ** 2:
+            if abs(nums[l]) < abs(nums[r]):
                 res.append(nums[r] ** 2)
                 r -= 1
             else:
